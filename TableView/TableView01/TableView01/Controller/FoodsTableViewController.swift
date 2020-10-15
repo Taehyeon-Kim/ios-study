@@ -9,11 +9,10 @@ import UIKit
 
 class FoodsTableViewController: UITableViewController {
     
-    var foods = ["food1", "food2", "food3"]
+    var foods: [Food] = Food.getFoods()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
 
     }
 
@@ -27,13 +26,18 @@ class FoodsTableViewController: UITableViewController {
 
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "foodCell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "foodCell", for: indexPath) as! FoodTableViewCell
 
         // Configure the cell...
         let food = foods[indexPath.row]
-        cell.textLabel?.text = food
+        cell.food = food
 
         return cell
     }
 
+    // MARK: - Table view delegate
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+    }
 }

@@ -21,6 +21,7 @@
 		BDFD58D425389076005B3DD0 /* playButton.png in Resources */ = {isa = PBXBuildFile; fileRef = BDFD58D325389076005B3DD0 /* playButton.png */; };
 		BDFD58D7253890E5005B3DD0 /* Food.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDFD58D6253890E5005B3DD0 /* Food.swift */; };
 		BDFD58DB253892EF005B3DD0 /* FoodsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDFD58DA253892EF005B3DD0 /* FoodsTableViewController.swift */; };
+		BDFD58E02538987E005B3DD0 /* FoodTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDFD58DF2538987E005B3DD0 /* FoodTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		BDFD58D325389076005B3DD0 /* playButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = playButton.png; sourceTree = "<group>"; };
 		BDFD58D6253890E5005B3DD0 /* Food.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Food.swift; sourceTree = "<group>"; };
 		BDFD58DA253892EF005B3DD0 /* FoodsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodsTableViewController.swift; sourceTree = "<group>"; };
+		BDFD58DF2538987E005B3DD0 /* FoodTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,12 +78,12 @@
 				BDFD58B225388E2F005B3DD0 /* AppDelegate.swift */,
 				BDFD58B425388E2F005B3DD0 /* SceneDelegate.swift */,
 				BDFD58B625388E2F005B3DD0 /* ViewController.swift */,
-				BDFD58B825388E2F005B3DD0 /* Main.storyboard */,
+				BDFD58E5253898A0005B3DD0 /* Model */,
+				BDFD58DD2538981E005B3DD0 /* View */,
+				BDFD58E325389893005B3DD0 /* Controller */,
 				BDFD58BB25388E30005B3DD0 /* Assets.xcassets */,
 				BDFD58BD25388E30005B3DD0 /* LaunchScreen.storyboard */,
 				BDFD58C025388E30005B3DD0 /* Info.plist */,
-				BDFD58D6253890E5005B3DD0 /* Food.swift */,
-				BDFD58DA253892EF005B3DD0 /* FoodsTableViewController.swift */,
 			);
 			path = TableView01;
 			sourceTree = "<group>";
@@ -97,6 +99,31 @@
 				BDFD58CC2538902E005B3DD0 /* food05.jpg */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		BDFD58DD2538981E005B3DD0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BDFD58B825388E2F005B3DD0 /* Main.storyboard */,
+				BDFD58DF2538987E005B3DD0 /* FoodTableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BDFD58E325389893005B3DD0 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				BDFD58DA253892EF005B3DD0 /* FoodsTableViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		BDFD58E5253898A0005B3DD0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BDFD58D6253890E5005B3DD0 /* Food.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -180,6 +207,7 @@
 				BDFD58D7253890E5005B3DD0 /* Food.swift in Sources */,
 				BDFD58B325388E2F005B3DD0 /* AppDelegate.swift in Sources */,
 				BDFD58B525388E2F005B3DD0 /* SceneDelegate.swift in Sources */,
+				BDFD58E02538987E005B3DD0 /* FoodTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -7,7 +7,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Premium-->
+        <!--Video List Table View Controller-->
         <scene sceneID="DIB-vi-KVS">
             <objects>
                 <tableViewController id="e0P-bF-BLN" customClass="VideoListTableViewController" customModule="TableView02" customModuleProvider="target" sceneMemberID="viewController">
@@ -98,7 +98,7 @@
                             <outlet property="delegate" destination="e0P-bF-BLN" id="3IN-yL-RAp"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Premium" id="Grr-4X-hWX"/>
+                    <navigationItem key="navigationItem" id="Grr-4X-hWX"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BVO-yd-p4k" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

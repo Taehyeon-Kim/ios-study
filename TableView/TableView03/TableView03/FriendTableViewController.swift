@@ -11,6 +11,9 @@ class FriendTableViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
     
+    var friends = Friend.fetchFriend()
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -27,13 +30,18 @@ class FriendTableViewController: UIViewController {
 
 extension FriendTableViewController: UITableViewDataSource, UITabBarDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        10
+        return friends.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: "friendTableCell") as? FriendTableViewCell else {
-            return UITableViewCell()
-        }
+        let cell = tableView.dequeueReusableCell(withIdentifier: "friendTableCell") as! FriendTableViewCell
+        
+        let friend = friends[indexPath.row]
+        
+        cell.avatarImageView?.image = UIImage(named: friend.avatarImageURL)
+        cell.userNameLabel?.text = friend.userName
+        cell.statusMessageLabel?.text = friend.statusMessage
+        
         return cell
     }
     

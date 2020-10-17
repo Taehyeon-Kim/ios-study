@@ -15,6 +15,7 @@
 		BDC82288253B01AC009569F6 /* FriendTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC82286253B01AC009569F6 /* FriendTableViewCell.swift */; };
 		BDC82289253B01AC009569F6 /* FriendTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BDC82287253B01AC009569F6 /* FriendTableViewCell.xib */; };
 		BDC8228C253B07C6009569F6 /* FriendTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC8228B253B07C6009569F6 /* FriendTableViewController.swift */; };
+		BDC8228F253B0DA0009569F6 /* Friend.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC8228E253B0DA0009569F6 /* Friend.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		BDC82286253B01AC009569F6 /* FriendTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendTableViewCell.swift; sourceTree = "<group>"; };
 		BDC82287253B01AC009569F6 /* FriendTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FriendTableViewCell.xib; sourceTree = "<group>"; };
 		BDC8228B253B07C6009569F6 /* FriendTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendTableViewController.swift; sourceTree = "<group>"; };
+		BDC8228E253B0DA0009569F6 /* Friend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Friend.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +71,7 @@
 				BDC82286253B01AC009569F6 /* FriendTableViewCell.swift */,
 				BDC82287253B01AC009569F6 /* FriendTableViewCell.xib */,
 				BDC8228B253B07C6009569F6 /* FriendTableViewController.swift */,
+				BDC8228E253B0DA0009569F6 /* Friend.swift */,
 			);
 			path = TableView03;
 			sourceTree = "<group>";
@@ -147,6 +150,7 @@
 				BDC82288253B01AC009569F6 /* FriendTableViewCell.swift in Sources */,
 				BDC8228C253B07C6009569F6 /* FriendTableViewController.swift in Sources */,
 				BDC8226C253AFE68009569F6 /* AppDelegate.swift in Sources */,
+				BDC8228F253B0DA0009569F6 /* Friend.swift in Sources */,
 				BDC8226E253AFE68009569F6 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

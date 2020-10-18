@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BD042B04253BFF6D0092EB90 /* MyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD042B02253BFF6D0092EB90 /* MyTableViewCell.swift */; };
+		BD042B05253BFF6D0092EB90 /* MyTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BD042B03253BFF6D0092EB90 /* MyTableViewCell.xib */; };
 		BDC8226C253AFE68009569F6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC8226B253AFE68009569F6 /* AppDelegate.swift */; };
 		BDC8226E253AFE68009569F6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC8226D253AFE68009569F6 /* SceneDelegate.swift */; };
 		BDC82273253AFE68009569F6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BDC82271253AFE68009569F6 /* Main.storyboard */; };
@@ -19,6 +21,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BD042B02253BFF6D0092EB90 /* MyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTableViewCell.swift; sourceTree = "<group>"; };
+		BD042B03253BFF6D0092EB90 /* MyTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyTableViewCell.xib; sourceTree = "<group>"; };
 		BDC82268253AFE68009569F6 /* TableView03.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TableView03.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDC8226B253AFE68009569F6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BDC8226D253AFE68009569F6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -43,6 +47,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BD042AFC253BFF050092EB90 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BDC82286253B01AC009569F6 /* FriendTableViewCell.swift */,
+				BDC82287253B01AC009569F6 /* FriendTableViewCell.xib */,
+				BD042B02253BFF6D0092EB90 /* MyTableViewCell.swift */,
+				BD042B03253BFF6D0092EB90 /* MyTableViewCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BD042AFE253BFF0E0092EB90 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BDC8228E253B0DA0009569F6 /* Friend.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BD042B00253BFF220092EB90 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				BDC8228B253B07C6009569F6 /* FriendTableViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		BDC8225F253AFE68009569F6 = {
 			isa = PBXGroup;
 			children = (
@@ -64,14 +95,13 @@
 			children = (
 				BDC8226B253AFE68009569F6 /* AppDelegate.swift */,
 				BDC8226D253AFE68009569F6 /* SceneDelegate.swift */,
+				BD042AFE253BFF0E0092EB90 /* Model */,
+				BD042AFC253BFF050092EB90 /* View */,
+				BD042B00253BFF220092EB90 /* Controller */,
 				BDC82271253AFE68009569F6 /* Main.storyboard */,
-				BDC82274253AFE69009569F6 /* Assets.xcassets */,
 				BDC82276253AFE69009569F6 /* LaunchScreen.storyboard */,
+				BDC82274253AFE69009569F6 /* Assets.xcassets */,
 				BDC82279253AFE69009569F6 /* Info.plist */,
-				BDC82286253B01AC009569F6 /* FriendTableViewCell.swift */,
-				BDC82287253B01AC009569F6 /* FriendTableViewCell.xib */,
-				BDC8228B253B07C6009569F6 /* FriendTableViewController.swift */,
-				BDC8228E253B0DA0009569F6 /* Friend.swift */,
 			);
 			path = TableView03;
 			sourceTree = "<group>";
@@ -133,6 +163,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD042B05253BFF6D0092EB90 /* MyTableViewCell.xib in Resources */,
 				BDC82278253AFE69009569F6 /* LaunchScreen.storyboard in Resources */,
 				BDC82275253AFE69009569F6 /* Assets.xcassets in Resources */,
 				BDC82273253AFE68009569F6 /* Main.storyboard in Resources */,
@@ -152,6 +183,7 @@
 				BDC8226C253AFE68009569F6 /* AppDelegate.swift in Sources */,
 				BDC8228F253B0DA0009569F6 /* Friend.swift in Sources */,
 				BDC8226E253AFE68009569F6 /* SceneDelegate.swift in Sources */,
+				BD042B04253BFF6D0092EB90 /* MyTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

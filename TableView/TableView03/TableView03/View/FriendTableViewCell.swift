@@ -13,6 +13,7 @@ class FriendTableViewCell: UITableViewCell {
     @IBOutlet weak var userNameLabel: UILabel?
     @IBOutlet weak var statusMessageLabel: UILabel?
 
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

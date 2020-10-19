@@ -14,9 +14,11 @@ class FeedTableViewCell: UITableViewCell {
     @IBOutlet weak var introductionLabel: UILabel?
     @IBOutlet weak var contentsLabel: UILabel?
     
+    // UI custom code 분리
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        
+        profileImageView?.layer.cornerRadius = (profileImageView?.frame.width)! / 2
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

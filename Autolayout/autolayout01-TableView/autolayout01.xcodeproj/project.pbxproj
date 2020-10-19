@@ -60,12 +60,12 @@
 			children = (
 				BDE5AFFB253D8774005B7784 /* AppDelegate.swift */,
 				BDE5AFFD253D8774005B7784 /* SceneDelegate.swift */,
-				BDE5AFFF253D8774005B7784 /* ViewController.swift */,
-				BDE5B001253D8774005B7784 /* Main.storyboard */,
 				BDE5B004253D8774005B7784 /* Assets.xcassets */,
 				BDE5B006253D8774005B7784 /* LaunchScreen.storyboard */,
 				BDE5B009253D8774005B7784 /* Info.plist */,
+				BDE5B001253D8774005B7784 /* Main.storyboard */,
 				BDE5B010253D96EA005B7784 /* FeedTableViewCell.swift */,
+				BDE5AFFF253D8774005B7784 /* ViewController.swift */,
 			);
 			path = autolayout01;
 			sourceTree = "<group>";

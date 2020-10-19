@@ -18,3 +18,9 @@
 □ Navigation Bar를 custom하기가 생각보다 어렵다. Navigation Item에서 title을 왼쪽 정렬하는 것까진 공부해보았다. 이 때 titleView라는 것을 이용해서 만들게 된다.    
 □ 궁금한 것은 titleView에 로고와 텍스트를 addSubView를 이용해서 추가하게 되는데 이것보다는 하나의 이미지로 만들어서 깔끔하게 가는 것이 나을까?      
 
+### Table View 연습 03
+■ Kakaotalk UI - 테이블 뷰 xib 이용  
+![image](https://user-images.githubusercontent.com/61109660/96389440-97b25b80-11ea-11eb-8503-18eec8ad1a78.png)  
+□ 커스텀 할 cell 디자인이 많을 경우 xib로 만드는 것이 편할 수도 있을 것 같음  
+□ 헤더 구분선 만드는 것이 생각보다 어려웠음 (좌우로 꽉찬 선은 만들기 쉬운데 양옆에 마진 있는 선을 만들기 좀 까다로웠음)  
+□ 이번에는 유독 datasource에 작성하는 함수가 많았음 (작성 코드를 분리 시킬 필요가 있을 것 같다. 코드가 많아지면)

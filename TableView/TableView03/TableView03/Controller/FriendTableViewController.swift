@@ -22,6 +22,8 @@ class FriendTableViewController: UIViewController {
         self.tableView.dataSource = self
         
         registerXib()
+        setNavbarAppearance()
+        setNavbarTitle()
     }
     
     private func registerXib() {
@@ -32,6 +34,27 @@ class FriendTableViewController: UIViewController {
         tableView.register(myNibName, forCellReuseIdentifier: "myTableCell")
     }
     
+    func setNavbarTitle() {
+        // 타이틀 뷰
+        let titleView = UIView(frame: CGRect(x: 0, y: 0, width: self.view.frame.width - 32, height: (self.navigationController?.navigationBar.frame.height)!))
+        
+        let title = UILabel(frame: CGRect(x: 6, y: 5, width: 150, height: 36))
+        
+        title.textColor = .black
+        title.font = .boldSystemFont(ofSize: 24)
+        title.text = "친구"
+        
+        titleView.addSubview(title)
+        
+        self.navigationItem.titleView = titleView
+    }
+    
+    func setNavbarAppearance(){
+        let navigationAppearance = UINavigationBarAppearance()
+        navigationAppearance.backgroundColor = .white
+        self.navigationController?.navigationBar.standardAppearance = navigationAppearance
+    }
+
 }
 
 // 지훈이 source 참고

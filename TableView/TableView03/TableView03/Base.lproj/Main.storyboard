@@ -33,7 +33,16 @@
                             <constraint firstItem="TIS-Tv-pjN" firstAttribute="top" secondItem="qy0-Fc-RLz" secondAttribute="top" id="h4a-nG-Ieb"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="친구" id="U7n-hX-geB"/>
+                    <navigationItem key="navigationItem" title="친구" id="U7n-hX-geB">
+                        <rightBarButtonItems>
+                            <barButtonItem title="Item" image="gearshape" catalog="system" id="Fy1-w6-ZEr">
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </barButtonItem>
+                            <barButtonItem title="Item" image="magnifyingglass" catalog="system" id="y2X-6G-dCG">
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </barButtonItem>
+                        </rightBarButtonItems>
+                    </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="TIS-Tv-pjN" id="25j-V0-Mgv"/>
                     </connections>
@@ -62,6 +71,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="gearshape" catalog="system" width="128" height="121"/>
+        <image name="magnifyingglass" catalog="system" width="128" height="115"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

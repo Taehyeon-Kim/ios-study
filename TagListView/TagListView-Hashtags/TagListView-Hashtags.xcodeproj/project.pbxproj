@@ -14,6 +14,7 @@
 		BD07E70625498F02009671DE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD07E70425498F02009671DE /* Main.storyboard */; };
 		BD07E70825498F03009671DE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD07E70725498F03009671DE /* Assets.xcassets */; };
 		BD07E70B25498F03009671DE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD07E70925498F03009671DE /* LaunchScreen.storyboard */; };
+		BD5E06C72549BC730050F7F1 /* MyTagListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD5E06C62549BC730050F7F1 /* MyTagListViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		BD07E70725498F03009671DE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BD07E70A25498F03009671DE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BD07E70C25498F03009671DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BD5E06C62549BC730050F7F1 /* MyTagListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTagListViewController.swift; sourceTree = "<group>"; };
 		C2FD56FC763606297D777606 /* Pods-TagListView-Hashtags.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TagListView-Hashtags.release.xcconfig"; path = "Target Support Files/Pods-TagListView-Hashtags/Pods-TagListView-Hashtags.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -74,6 +76,7 @@
 				BD07E6FE25498F02009671DE /* AppDelegate.swift */,
 				BD07E70025498F02009671DE /* SceneDelegate.swift */,
 				BD07E70225498F02009671DE /* ViewController.swift */,
+				BD5E06C62549BC730050F7F1 /* MyTagListViewController.swift */,
 				BD07E70425498F02009671DE /* Main.storyboard */,
 				BD07E70725498F03009671DE /* Assets.xcassets */,
 				BD07E70925498F03009671DE /* LaunchScreen.storyboard */,
@@ -206,6 +209,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BD07E70325498F02009671DE /* ViewController.swift in Sources */,
+				BD5E06C72549BC730050F7F1 /* MyTagListViewController.swift in Sources */,
 				BD07E6FF25498F02009671DE /* AppDelegate.swift in Sources */,
 				BD07E70125498F02009671DE /* SceneDelegate.swift in Sources */,
 			);

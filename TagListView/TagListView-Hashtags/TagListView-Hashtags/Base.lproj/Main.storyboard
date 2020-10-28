@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="qqV-wn-Xg5">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -86,6 +86,12 @@
                                     <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
                                         <color key="value" systemColor="systemGray2Color"/>
                                     </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="removeIconLineWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="removeButtonIconSize">
+                                        <real key="value" value="6"/>
+                                    </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
                         </subviews>
@@ -111,8 +117,150 @@
             </objects>
             <point key="canvasLocation" x="137.68115942028987" y="125.89285714285714"/>
         </scene>
+        <!--My Tag List View Controller-->
+        <scene sceneID="YbR-8l-Cyn">
+            <objects>
+                <viewController id="qqV-wn-Xg5" customClass="MyTagListViewController" customModule="TagListView_Hashtags" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="q1S-mB-QSM">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9Fu-he-g0i">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cNU-5C-sXl">
+                                        <rect key="frame" x="36" y="36" width="342" height="86"/>
+                                        <string key="text">My Hastags 
+Practice</string>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="36"/>
+                                        <color key="textColor" systemColor="tertiarySystemGroupedBackgroundColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aAu-Hv-FD3">
+                                        <rect key="frame" x="36" y="142" width="342" height="640"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="19" translatesAutoresizingMaskIntoConstraints="NO" id="zOD-LJ-ati">
+                                                <rect key="frame" x="0.0" y="8" width="342" height="40"/>
+                                                <subviews>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Input your hashtag" textAlignment="natural" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="3S5-9F-JGV">
+                                                        <rect key="frame" x="0.0" y="0.0" width="283" height="40"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                    </textField>
+                                                    <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="300" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qzF-bL-lb5">
+                                                        <rect key="frame" x="302" y="0.0" width="40" height="40"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="40" id="ATe-Kf-lxB"/>
+                                                            <constraint firstAttribute="width" constant="40" id="SX0-5b-BjD"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                                        <state key="normal" title="⊕"/>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KNb-Jv-TDR" customClass="TagListView" customModule="TagListView">
+                                                <rect key="frame" x="0.0" y="68" width="342" height="562"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="paddingY">
+                                                        <real key="value" value="10"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="paddingX">
+                                                        <real key="value" value="20"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <real key="value" value="1"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="15"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="tagBackgroundColor">
+                                                        <color key="value" red="0.56523394579999997" green="0.41462254520000003" blue="0.83523392679999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="tagSelectedBackgroundColor">
+                                                        <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="selectedTextColor">
+                                                        <color key="value" red="0.56523394579999997" green="0.41462254520000003" blue="0.83523392679999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="textColor">
+                                                        <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                                        <real key="value" value="10"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                                        <size key="value" width="5" height="5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                                        <real key="value" value="0.5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="removeButtonIconSize">
+                                                        <real key="value" value="7"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="removeIconLineWidth">
+                                                        <real key="value" value="1"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="enableRemoveButton" value="YES"/>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="removeIconLineColor">
+                                                        <color key="value" systemColor="systemYellowColor"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="zOD-LJ-ati" firstAttribute="top" secondItem="aAu-Hv-FD3" secondAttribute="top" constant="8" id="3gu-eR-bZQ"/>
+                                            <constraint firstAttribute="bottom" secondItem="KNb-Jv-TDR" secondAttribute="bottom" constant="10" id="Bk6-4S-9i7"/>
+                                            <constraint firstItem="KNb-Jv-TDR" firstAttribute="trailing" secondItem="zOD-LJ-ati" secondAttribute="trailing" id="Ddz-zB-Jag"/>
+                                            <constraint firstItem="zOD-LJ-ati" firstAttribute="leading" secondItem="aAu-Hv-FD3" secondAttribute="leading" id="VFF-7l-jQV"/>
+                                            <constraint firstItem="KNb-Jv-TDR" firstAttribute="leading" secondItem="zOD-LJ-ati" secondAttribute="leading" id="WGW-NG-tX8"/>
+                                            <constraint firstAttribute="trailing" secondItem="zOD-LJ-ati" secondAttribute="trailing" id="bBz-jD-12t"/>
+                                            <constraint firstItem="KNb-Jv-TDR" firstAttribute="top" secondItem="zOD-LJ-ati" secondAttribute="bottom" constant="20" id="iEF-4g-PEn"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" red="0.56523394579999997" green="0.41462254520000003" blue="0.83523392679999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="cNU-5C-sXl" firstAttribute="top" secondItem="9Fu-he-g0i" secondAttribute="top" constant="36" id="ABi-iF-0cQ"/>
+                                    <constraint firstAttribute="trailing" secondItem="aAu-Hv-FD3" secondAttribute="trailing" constant="36" id="Xmn-Mt-aIL"/>
+                                    <constraint firstAttribute="bottom" secondItem="aAu-Hv-FD3" secondAttribute="bottom" constant="36" id="aaj-ns-voY"/>
+                                    <constraint firstItem="aAu-Hv-FD3" firstAttribute="top" secondItem="cNU-5C-sXl" secondAttribute="bottom" constant="20" id="h8r-vA-C3l"/>
+                                    <constraint firstItem="cNU-5C-sXl" firstAttribute="leading" secondItem="9Fu-he-g0i" secondAttribute="leading" constant="36" id="rTh-cd-QCn"/>
+                                    <constraint firstAttribute="trailing" secondItem="cNU-5C-sXl" secondAttribute="trailing" constant="36" id="wbX-3p-gfa"/>
+                                    <constraint firstItem="aAu-Hv-FD3" firstAttribute="leading" secondItem="9Fu-he-g0i" secondAttribute="leading" constant="36" id="xDA-BS-4Mt"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="5hT-Ha-t1n"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="9Fu-he-g0i" firstAttribute="trailing" secondItem="5hT-Ha-t1n" secondAttribute="trailing" id="M7w-Mx-EhG"/>
+                            <constraint firstItem="9Fu-he-g0i" firstAttribute="leading" secondItem="5hT-Ha-t1n" secondAttribute="leading" id="YGG-sq-Pqh"/>
+                            <constraint firstItem="5hT-Ha-t1n" firstAttribute="bottom" secondItem="9Fu-he-g0i" secondAttribute="bottom" id="cWm-ZC-HHA"/>
+                            <constraint firstItem="9Fu-he-g0i" firstAttribute="top" secondItem="5hT-Ha-t1n" secondAttribute="top" id="e4f-E9-5rh"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="addButton" destination="qzF-bL-lb5" id="4OR-lO-zN3"/>
+                        <outlet property="inputField" destination="3S5-9F-JGV" id="N7a-zO-SaW"/>
+                        <outlet property="myTagListView" destination="KNb-Jv-TDR" id="THd-2f-2ho"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eYJ-AZ-OA1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1157.9710144927537" y="125.89285714285714"/>
+        </scene>
     </scenes>
     <designables>
+        <designable name="KNb-Jv-TDR">
+            <size key="intrinsicContentSize" width="342" height="66"/>
+        </designable>
         <designable name="wJL-Tm-Hkg">
             <size key="intrinsicContentSize" width="374" height="32"/>
         </designable>
@@ -129,6 +277,12 @@
         </systemColor>
         <systemColor name="systemGray4Color">
             <color red="0.81960784313725488" green="0.81960784313725488" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="tertiarySystemGroupedBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

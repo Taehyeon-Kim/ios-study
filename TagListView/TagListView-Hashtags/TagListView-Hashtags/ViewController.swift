@@ -6,14 +6,64 @@
 //
 
 import UIKit
+import TagListView
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, TagListViewDelegate {
 
+    @IBOutlet weak var addTagButton: UIButton!
+    @IBOutlet weak var userInputTextField: UITextField!
+    @IBOutlet weak var myTagListView: TagListView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        myTagListView.delegate = self
+        addTagButton.addTarget(self, action: #selector(addTag), for: .touchUpInside)
     }
 
+    @objc fileprivate func addTag() {
+        print("ViewController - addTag() called")
+        
+        // 사용자의 입력값을 텍스트필드에서 가져옴
+        let userInput = userInputTextField.text ?? ""
+        
+        // 값이 있으면 태그 추가
+        if userInput.count > 1 {  // 값이 있는 상태
+            myTagListView.addTag(userInput)
+            userInputTextField.text = nil
+        }
+        // 값이 없으면 경고창 띄우기
+        else {
+            let alert = UIAlertController(title: "내용을 입력해주세요!", message: "", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "확인", style: .default, handler: nil))
+            self.present(alert, animated: true, completion: nil)
+        }
+        
+    }
+    
+    //MARK: - TagListViewDelegate
+    
+    /// 태그를 눌렀을 때
+    /// - Parameters:
+    ///   - title: 태그의 타이틀
+    ///   - tagView: 해당 태그뷰
+    ///   - sender: 태그 리스트뷰
+    func tagPressed(_ title: String, tagView: TagView, sender: TagListView) {
+        print("ViewController - tagPressed() called / title: \(title)")
+        // 해당 태그뷰의 true/false 값을 toggle
+        tagView.isSelected.toggle()
+    }
 
+    //
+    
+    /// 태그 삭제버튼이 클릭 되었을 때
+    /// - Parameters:
+    ///   - title: 태그의 타이틀
+    ///   - tagView: 해당 태그뷰
+    ///   - sender: 태그 리스트뷰
+    func tagRemoveButtonPressed(_ title: String, tagView: TagView, sender: TagListView) {
+        print("ViewController - tagRemoveButtonPressed() called / title: \(title)")
+        sender.removeTagView(tagView)
+    }
 }
 

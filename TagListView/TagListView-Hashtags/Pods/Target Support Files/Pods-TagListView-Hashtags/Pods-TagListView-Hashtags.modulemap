@@ -1,0 +1,6 @@
+framework module Pods_TagListView_Hashtags {
+  umbrella header "Pods-TagListView-Hashtags-umbrella.h"
+
+  export *
+  module * { export * }
+}

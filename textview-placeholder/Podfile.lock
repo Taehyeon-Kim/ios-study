@@ -1,0 +1,16 @@
+PODS:
+  - "UITextView+Placeholder (1.4.0)"
+
+DEPENDENCIES:
+  - "UITextView+Placeholder"
+
+SPEC REPOS:
+  trunk:
+    - "UITextView+Placeholder"
+
+SPEC CHECKSUMS:
+  "UITextView+Placeholder": d7b0c400921f66523f3a85d74f774512e14f6502
+
+PODFILE CHECKSUM: 62544871ec99e6cb2ccc9b386902a0d42a158cca
+
+COCOAPODS: 1.9.3

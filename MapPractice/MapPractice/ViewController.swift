@@ -31,7 +31,7 @@ class ViewController: UIViewController, MTMapViewDelegate {
             mapView.showCurrentLocationMarker = true
             mapView.currentLocationTrackingMode = .onWithoutHeading
             
-            // 테스트 핀 하나 생성 
+            // 테스트 핀 하나 생성
             self.mapPoint1 = MTMapPoint(geoCoord: MTMapPointGeo(latitude: 37.587568, longitude: 127.029248))
             poiItem1 = MTMapPOIItem()
             poiItem1?.markerType = MTMapPOIItemMarkerType.yellowPin
@@ -48,3 +48,29 @@ class ViewController: UIViewController, MTMapViewDelegate {
 
 }
 
+#if DEBUG
+
+import SwiftUI
+struct ViewControllerRepresentable: UIViewControllerRepresentable {
+
+    // update
+    func updateUIViewController(_ uiViewController: UIViewController, context: Context){
+
+    }
+
+    // make UI
+    @available(iOS 14.0, *)
+    func makeUIViewController(context: Context) -> UIViewController {
+        ViewController()
+    }
+}
+
+struct ViewController_Preview: PreviewProvider {
+    static var previews: some View {
+        ViewControllerRepresentable()
+            .ignoresSafeArea()
+            .previewDisplayName("미리보기")
+    }
+}
+
+#endif

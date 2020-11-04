@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BD510027254E63B900E56CF2 /* SharedListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD510026254E63B900E56CF2 /* SharedListViewController.swift */; };
+		BD51002B254E66EE00E56CF2 /* SharedList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD51002A254E66EE00E56CF2 /* SharedList.storyboard */; };
+		BD51002E254E7B5200E56CF2 /* SharedListData.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD51002D254E7B4D00E56CF2 /* SharedListData.swift */; };
+		BD510034254E7DA100E56CF2 /* SharedListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD510033254E7DA100E56CF2 /* SharedListTableViewCell.swift */; };
 		BDF33334254DAB7200A9372E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDF33333254DAB7200A9372E /* AppDelegate.swift */; };
 		BDF33336254DAB7200A9372E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDF33335254DAB7200A9372E /* SceneDelegate.swift */; };
 		BDF33338254DAB7200A9372E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDF33337254DAB7200A9372E /* ViewController.swift */; };
@@ -51,6 +55,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BD510026254E63B900E56CF2 /* SharedListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedListViewController.swift; sourceTree = "<group>"; };
+		BD51002A254E66EE00E56CF2 /* SharedList.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SharedList.storyboard; sourceTree = "<group>"; };
+		BD51002D254E7B4D00E56CF2 /* SharedListData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedListData.swift; sourceTree = "<group>"; };
+		BD510033254E7DA100E56CF2 /* SharedListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedListTableViewCell.swift; sourceTree = "<group>"; };
 		BDF33330254DAB7100A9372E /* MapPractice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MapPractice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDF33333254DAB7200A9372E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BDF33335254DAB7200A9372E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -161,6 +169,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BD510023254E638400E56CF2 /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				BDF33337254DAB7200A9372E /* ViewController.swift */,
+				BD510026254E63B900E56CF2 /* SharedListViewController.swift */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		BD510025254E638B00E56CF2 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				BDF33339254DAB7200A9372E /* Main.storyboard */,
+				BD51002A254E66EE00E56CF2 /* SharedList.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		BD510030254E7B5600E56CF2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BD51002D254E7B4D00E56CF2 /* SharedListData.swift */,
+				BD510033254E7DA100E56CF2 /* SharedListTableViewCell.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		BDF33327254DAB7100A9372E = {
 			isa = PBXGroup;
 			children = (
@@ -185,8 +220,9 @@
 			children = (
 				BDF33333254DAB7200A9372E /* AppDelegate.swift */,
 				BDF33335254DAB7200A9372E /* SceneDelegate.swift */,
-				BDF33337254DAB7200A9372E /* ViewController.swift */,
-				BDF33339254DAB7200A9372E /* Main.storyboard */,
+				BD510030254E7B5600E56CF2 /* Model */,
+				BD510023254E638400E56CF2 /* VC */,
+				BD510025254E638B00E56CF2 /* Storyboard */,
 				BDF3333C254DAB7200A9372E /* Assets.xcassets */,
 				BDF3333E254DAB7200A9372E /* LaunchScreen.storyboard */,
 				BDF33341254DAB7200A9372E /* Info.plist */,
@@ -392,6 +428,7 @@
 				BDF3337D254DAB8C00A9372E /* map_pin_red.png in Resources */,
 				BDF3336F254DAB8C00A9372E /* map_pinup_custom@3x.png in Resources */,
 				BDF33377254DAB8C00A9372E /* copyright.png in Resources */,
+				BD51002B254E66EE00E56CF2 /* SharedList.storyboard in Resources */,
 				BDF33376254DAB8C00A9372E /* map_pin_shadow@3x.png in Resources */,
 				BDF33340254DAB7200A9372E /* LaunchScreen.storyboard in Resources */,
 				BDF3337A254DAB8C00A9372E /* daum_copyright.png in Resources */,
@@ -427,7 +464,10 @@
 			files = (
 				BDF33338254DAB7200A9372E /* ViewController.swift in Sources */,
 				BDF33334254DAB7200A9372E /* AppDelegate.swift in Sources */,
+				BD510034254E7DA100E56CF2 /* SharedListTableViewCell.swift in Sources */,
 				BDF33336254DAB7200A9372E /* SceneDelegate.swift in Sources */,
+				BD51002E254E7B5200E56CF2 /* SharedListData.swift in Sources */,
+				BD510027254E63B900E56CF2 /* SharedListViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
